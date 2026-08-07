@@ -96,3 +96,27 @@ export const skills = [
     ],
   },
 ];
+
+export const socialLinks = [
+  {
+    name: "GitHub",
+    href: "https://github.com/MarkVincent06",
+    icon: "FaGithub",
+  },
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/markvincentcleofe06",
+    icon: "FaFacebookF",
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/just.krammm_",
+    icon: "FaInstagram",
+  },
+  { name: "X", href: "https://x.com/cleofemarkv", icon: "FaXTwitter" },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/mark-vincent06",
+    icon: "FaLinkedinIn",
+  },
+];

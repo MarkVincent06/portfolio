@@ -53,7 +53,7 @@ export default function Projects() {
                         aria-label={`${project.name} GitHub repository`}
                         className="text-ink hover:text-accent transition-colors"
                       >
-                        <FaGithub size={18} className="text-accent" />
+                        <FaGithub size={18} className="hover:text-accent" />
                       </a>
 
                       {project.liveUrl && (
@@ -64,7 +64,10 @@ export default function Projects() {
                           aria-label={`${project.name} live demo`}
                           className="text-ink hover:text-accent transition-colors"
                         >
-                          <FaExternalLinkAlt size={16} />
+                          <FaExternalLinkAlt
+                            size={16}
+                            className="hover:text-accent"
+                          />
                         </a>
                       )}
                     </span>

@@ -45,7 +45,7 @@ export default function Hero() {
 
         {/* Right column — photo */}
         <div className="hidden md:flex justify-center">
-          <div className="relative w-[380px] aspect-square rounded-[32px] overflow-hidden bg-[#F5F7FA] border border-border shadow-[0_8px_30px_rgba(18,20,26,0.06)]">
+          <div className="relative w-[320px] aspect-square rounded-[32px] overflow-hidden bg-[#F5F7FA] border border-border shadow-[0_8px_30px_rgba(18,20,26,0.06)]">
             <img
               src={profilePhoto}
               alt="Mark Vincent Cleofe"

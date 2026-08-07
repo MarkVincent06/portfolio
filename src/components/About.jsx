@@ -14,7 +14,7 @@ export default function About() {
   return (
     <section id="about" className="py-12 md:py-24 bg-bg">
       <Container>
-        <div className="max-w-3xl">
+        <div className="max-w-5xl">
           <SectionHeading eyebrow="about" title="About me" />
 
           <p className="font-body text-base leading-relaxed text-muted mb-5">

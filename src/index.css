@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme {
   /* colors */
   --color-ink: #12141a; /* primary text — near-black, slight cool undertone */

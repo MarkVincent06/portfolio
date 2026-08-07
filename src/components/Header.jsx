@@ -2,6 +2,7 @@ import { useState } from "react";
 import { LuCode, LuMenu, LuX } from "react-icons/lu";
 
 const NAV_LINKS = [
+  { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },

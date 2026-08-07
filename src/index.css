@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+  /* colors */
+  --color-ink: #12141a; /* primary text — near-black, slight cool undertone */
+  --color-muted: #5b6270; /* secondary text — cool gray */
+  --color-bg: #fafbfc; /* page background, crisp off-white */
+  --color-accent: #2455a4; /* professional blue — buttons, links, highlights */
+  --color-accent-dark: #1b3f80; /* hover/active state for accent */
+  --color-border: #e2e5ea; /* hairline borders */
+  --color-code-bg: #12141a; /* code card background */
+
+  /* fonts */
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}

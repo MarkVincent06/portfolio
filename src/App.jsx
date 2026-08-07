@@ -1,7 +1,9 @@
 function App() {
   return (
     <>
-      <h2 className="bg-red-500">App ran!</h2>
+      <h1 className="font-display text-accent">Space Grotesk</h1>
+      <p className="font-body text-ink">Inter</p>
+      <snall className="font-mono text-muted">JetBrains Mono</snall>
     </>
   );
 }

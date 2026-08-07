@@ -1,5 +1,6 @@
 import profilePhoto from "../assets/profile.png";
 import Container from "./ui/Container";
+import Button from "./ui/Button";
 
 export default function Hero() {
   return (
@@ -29,18 +30,7 @@ export default function Hero() {
             CRM adopted by 20+ employees in production.
           </p>
 
-          <div className="flex items-center gap-5">
-            <button className="bg-accent hover:bg-accent-dark text-white font-body text-sm font-medium rounded-md px-5 py-3 transition-colors">
-              View projects
-            </button>
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              className="font-body text-sm text-ink border-b border-ink pb-0.5"
-            >
-              Download resume
-            </a>
-          </div>
+          <Button name="Download CV" cta="/resume.pdf" />
         </div>
 
         {/* Right column — photo */}

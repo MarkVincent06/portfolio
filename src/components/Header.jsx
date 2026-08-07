@@ -26,7 +26,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="font-body text-sm text-muted hover:text-ink transition-colors"
+              className="font-body text-sm text-muted hover:text-accent-dark transition-colors"
             >
               {link.label}
             </a>
@@ -51,7 +51,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="font-body text-sm text-muted hover:text-ink py-2 transition-colors"
+              className="font-body text-sm text-muted hover:text-accent py-2 transition-colors"
             >
               {link.label}
             </a>

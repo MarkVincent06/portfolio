@@ -1,6 +1,7 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import SectionHeading from "./ui/SectionHeading";
 import Container from "./ui/Container";
+import Button from "./ui/Button";
 import { projects } from "../data/portfolio";
 
 export default function Projects() {
@@ -45,13 +46,11 @@ export default function Projects() {
                   <p className="font-body text-sm leading-relaxed text-muted mb-5">
                     {project.description}
                   </p>
-
                   <ul className="flex flex-wrap gap-x-3 gap-y-1 font-mono text-xs text-muted mb-5">
                     {project.tech.map((tech) => (
                       <li key={tech}>{tech}</li>
                     ))}
                   </ul>
-
                   <div className="flex items-center gap-4 mb-4">
                     <a
                       href={project.githubUrl}
@@ -74,25 +73,25 @@ export default function Projects() {
                       </a>
                     )}
                   </div>
-
                   {/* Learn more — will link to a project detail route later */}
-                  <a
+                  <Button
+                    name="Learn more →"
+                    cta="#"
+                    className="inline-block mt-4"
+                  />
+                  {/* <a
                     href="#"
                     className="font-body text-sm text-accent border-b border-accent pb-0.5"
-                  >
-                    Learn more →
-                  </a>
+                  ></a> */}
                 </div>
               </div>
             );
           })}
         </div>
 
-        {/* View all projects — will link to all projects route later */}
+        {/* View other projects — will link to other projects route later */}
         <div className="flex justify-center mt-16">
-          <button className="font-body text-sm font-medium text-ink border border-border rounded-md px-5 py-3 hover:border-ink transition-colors">
-            View all projects
-          </button>
+          <Button name="View other projects" cta="#" />
         </div>
       </Container>
     </section>

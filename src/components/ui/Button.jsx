@@ -1,13 +1,18 @@
-export default function Button({ name, cta, className = "" }) {
+export default function Button({
+  children,
+  onClick,
+  type = "button",
+  disabled = false,
+  className = "",
+}) {
   return (
-    <div className={`max-w-6xl ${className}`}>
-      <a
-        href={cta}
-        target="_blank"
-        className="border border-accent text-accent hover:bg-accent-dark hover:text-white font-body text-sm font-medium rounded-md px-5 py-3 transition-colors"
-      >
-        {name}
-      </a>
-    </div>
+    <button
+      type={type}
+      onClick={onClick}
+      disabled={disabled}
+      className={`border border-accent text-accent hover:bg-accent-dark disabled:opacity-60 hover:text-white font-body text-sm font-medium rounded-md px-6 py-3 transition-colors cursor-pointer ${className}`}
+    >
+      {children}
+    </button>
   );
 }

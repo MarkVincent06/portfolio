@@ -30,7 +30,9 @@ export default function Hero() {
             CRM adopted by 20+ employees in production.
           </p>
 
-          <Button name="Download CV" cta="/resume.pdf" />
+          <Button onClick={() => window.open("/resume.pdf", "_blank")}>
+            Download resume
+          </Button>
         </div>
 
         {/* Right column — photo */}

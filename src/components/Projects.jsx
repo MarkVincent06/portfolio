@@ -40,9 +40,35 @@ export default function Projects() {
                     reversed ? "md:-mr-16" : "md:-ml-16"
                   }`}
                 >
-                  <h3 className="font-display font-bold text-xl text-ink mb-3">
-                    {project.name}
-                  </h3>
+                  <div className="flex items-center justify-between mb-3">
+                    <h3 className="font-display font-bold text-xl text-ink">
+                      {project.name}
+                    </h3>
+
+                    <span className="flex items-center gap-3">
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`${project.name} GitHub repository`}
+                        className="text-ink hover:text-accent transition-colors"
+                      >
+                        <FaGithub size={18} className="text-accent" />
+                      </a>
+
+                      {project.liveUrl && (
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label={`${project.name} live demo`}
+                          className="text-ink hover:text-accent transition-colors"
+                        >
+                          <FaExternalLinkAlt size={16} />
+                        </a>
+                      )}
+                    </span>
+                  </div>
                   <p className="font-body text-sm leading-relaxed text-muted mb-5">
                     {project.description}
                   </p>
@@ -51,38 +77,9 @@ export default function Projects() {
                       <li key={tech}>{tech}</li>
                     ))}
                   </ul>
-                  <div className="flex items-center gap-4 mb-4">
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label={`${project.name} GitHub repository`}
-                      className="text-ink hover:text-accent transition-colors"
-                    >
-                      <FaGithub size={18} />
-                    </a>
-                    {project.liveUrl && (
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label={`${project.name} live demo`}
-                        className="text-ink hover:text-accent transition-colors"
-                      >
-                        <FaExternalLinkAlt size={16} />
-                      </a>
-                    )}
-                  </div>
+
                   {/* Learn more — will link to a project detail route later */}
-                  <Button
-                    name="Learn more →"
-                    cta="#"
-                    className="inline-block mt-4"
-                  />
-                  {/* <a
-                    href="#"
-                    className="font-body text-sm text-accent border-b border-accent pb-0.5"
-                  ></a> */}
+                  <Button>Learn more -{">"}</Button>
                 </div>
               </div>
             );
@@ -91,7 +88,7 @@ export default function Projects() {
 
         {/* View other projects — will link to other projects route later */}
         <div className="flex justify-center mt-16">
-          <Button name="View other projects" cta="#" />
+          <Button>View Other Projects</Button>
         </div>
       </Container>
     </section>

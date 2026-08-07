@@ -1,14 +1,7 @@
 import SectionHeading from "./ui/SectionHeading";
 import Container from "./ui/Container";
 
-const CORE_STACK = [
-  "React",
-  "Node.js",
-  "Express",
-  "MongoDB",
-  "Tailwind CSS",
-  "REST APIs",
-];
+const CORE_STACK = ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"];
 
 export default function About() {
   return (

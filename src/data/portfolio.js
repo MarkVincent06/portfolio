@@ -49,3 +49,50 @@ export const projects = [
     liveUrl: null,
   },
 ];
+
+export const skills = [
+  {
+    category: "Languages",
+    items: [
+      { name: "JavaScript", icon: "SiJavascript" },
+      { name: "TypeScript", icon: "SiTypescript" },
+      { name: "PHP", icon: "SiPhp" },
+      { name: "Java", icon: "FaJava" },
+      { name: "HTML5", icon: "SiHtml5" },
+      { name: "CSS3", icon: "SiCss" },
+      { name: "C++", icon: "SiCplusplus" },
+    ],
+  },
+  {
+    category: "Frontend",
+    items: [
+      { name: "React", icon: "SiReact", core: true },
+      { name: "Tailwind CSS", icon: "SiTailwindcss", core: true },
+      { name: "Bootstrap", icon: "SiBootstrap" },
+      { name: "Sass", icon: "SiSass" },
+      { name: "Axios", icon: "TbApi" },
+      { name: "jQuery", icon: "SiJquery" },
+    ],
+  },
+  {
+    category: "Backend & databases",
+    items: [
+      { name: "Node.js", icon: "SiNodedotjs", core: true },
+      { name: "Express.js", icon: "SiExpress", core: true },
+      { name: "MongoDB", icon: "SiMongodb", core: true },
+      { name: "Firebase", icon: "SiFirebase" },
+      { name: "Redis", icon: "SiRedis" },
+      { name: "Laravel", icon: "SiLaravel" },
+      { name: "MySQL", icon: "SiMysql" },
+    ],
+  },
+  {
+    category: "Tools",
+    items: [
+      { name: "Git", icon: "SiGit" },
+      { name: "GitHub", icon: "SiGithub" },
+      { name: "Postman", icon: "SiPostman" },
+      { name: "Figma", icon: "SiFigma" },
+    ],
+  },
+];

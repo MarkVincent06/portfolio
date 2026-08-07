@@ -22,3 +22,30 @@ export const experience = [
     ],
   },
 ];
+
+export const projects = [
+  {
+    name: "IntelliCRM",
+    description:
+      "A full-stack CRM system with real-time notifications and role-based access control, adopted by 20+ employees to streamline customer management and sales operations.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "REST API", "JWT"],
+    githubUrl: "https://github.com/MarkVincent06/CRM_System",
+    liveUrl: null,
+  },
+  {
+    name: "ChronoLock",
+    description:
+      "A cross-platform mobile app for laboratory access control, attendance monitoring, and smart door lock integration, supporting seat management for 300+ users.",
+    tech: ["React Native", "Node.js", "MySQL", "REST API"],
+    githubUrl: "https://github.com/MarkVincent06/ChronoLock_Mobile",
+    liveUrl: null,
+  },
+  {
+    name: "Redish-Store",
+    description:
+      "A Redis-inspired in-memory database supporting strings, lists, hashes, sets, JSON, streams, and geospatial data — with AOF persistence, pub/sub, and transactions.",
+    tech: ["JavaScript", "Node.js", "Redis Concepts"],
+    githubUrl: "https://github.com/MarkVincent06/redish-store",
+    liveUrl: null,
+  },
+];

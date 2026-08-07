@@ -2,6 +2,7 @@ import { useActionState } from "react";
 import SectionHeading from "./ui/SectionHeading";
 import Container from "./ui/Container";
 import Button from "./ui/Button";
+import { email } from "../data/portfolio";
 
 async function submitForm(prevState, formData) {
   try {
@@ -118,9 +119,18 @@ export default function Contact() {
               />
             </div>
 
-            <Button type="submit" disabled={isPending}>
-              {isPending ? "Sending..." : "Send message"}
-            </Button>
+            <div className="flex flex-col md:flex-row md:items-center gap-3 md:gap-5">
+              <Button type="submit" disabled={isPending}>
+                {isPending ? "Sending..." : "Send message"}
+              </Button>
+
+              <a
+                href={`mailto:${email}`}
+                className="font-mono text-xs text-muted hover:text-accent transition-colors underline underline-offset-4 decoration-border hover:decoration-accent"
+              >
+                or email me at: {email}
+              </a>
+            </div>
 
             {state.status === "success" && (
               <p className="font-body text-sm text-accent">{state.message}</p>

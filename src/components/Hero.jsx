@@ -30,9 +30,18 @@ export default function Hero() {
             CRM adopted by 20+ employees in production.
           </p>
 
-          <Button onClick={() => window.open("/resume.pdf", "_blank")}>
-            Download resume
-          </Button>
+          <div className="flex items-center gap-4">
+            <Button onClick={() => window.open("/resume.pdf", "_blank")}>
+              Download resume
+            </Button>
+
+            <a
+              href="mailto:vincentmariscotescleofe@gmail.com"
+              className="font-mono text-xs text-muted hover:text-accent transition-colors underline underline-offset-4 decoration-border hover:decoration-accent"
+            >
+              or email me
+            </a>
+          </div>
         </div>
 
         {/* Right column — photo */}

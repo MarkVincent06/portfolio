@@ -120,3 +120,5 @@ export const socialLinks = [
     icon: "FaLinkedinIn",
   },
 ];
+
+export const email = "vincentmariscotescleofe@gmail.com";

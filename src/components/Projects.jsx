@@ -27,10 +27,12 @@ export default function Projects() {
               >
                 {/* Screenshot placeholder */}
                 <div className="md:w-8/12">
-                  <div className="aspect-video w-full rounded-lg border border-border bg-code-bg/5 flex items-center justify-center">
-                    <span className="font-mono text-xs text-muted">
-                      {project.name} screenshot
-                    </span>
+                  <div className="w-full overflow-hidden rounded-xl border border-border bg-white p-2">
+                    <img
+                      src={project.image}
+                      alt={`${project.name} screenshot`}
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                 </div>
 
@@ -82,7 +84,19 @@ export default function Projects() {
                   </ul>
 
                   {/* Learn more — will link to a project detail route later */}
-                  <Button>Learn more -{">"}</Button>
+                  {/* <Button>Learn more -{">"}</Button> */}
+
+                  {/* Case study placeholder */}
+                  <div className="mt-6 pt-5 border-t border-border">
+                    <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-2">
+                      Coming soon
+                    </p>
+                    <p className="font-body text-sm text-muted">
+                      A detailed case study covering the architecture,
+                      development process, technical challenges, and key
+                      implementation decisions for this project.
+                    </p>
+                  </div>
                 </div>
               </div>
             );
@@ -90,8 +104,22 @@ export default function Projects() {
         </div>
 
         {/* View other projects — will link to other projects route later */}
-        <div className="flex justify-center mt-16">
+        {/* <div className="flex justify-center mt-16">
           <Button>View Other Projects</Button>
+        </div> */}
+
+        {/* More projects placeholder */}
+        <div className="mt-10 text-center border-t border-border pt-10">
+          <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-2">
+            More projects
+          </p>
+          <h3 className="font-display text-xl font-semibold text-ink mb-3">
+            Additional projects coming soon
+          </h3>
+          <p className="font-body text-muted max-w-xl mx-auto">
+            I'm currently documenting more projects and writing detailed case
+            studies. More work will be added here soon.
+          </p>
         </div>
       </Container>
     </section>

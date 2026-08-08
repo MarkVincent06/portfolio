@@ -2,23 +2,25 @@
 
 Personal developer portfolio showcasing my full-stack projects and experience.
 
-🔗 Live site: _coming soon_
+🔗 Live site: [markvc.vercel.app](https://markvc.vercel.app/)
 
 ## Built with
 
 - React
 - Vite
 - Tailwind CSS
+- React Icons
+- Formspree (contact form)
 
-## Run locally
+## Features
 
-```bash
-git clone https://github.com/MarkVincent06/portfolio.git
-cd portfolio
-npm install
-npm run dev
-```
+- Responsive layout with fixed social + email sidebars on desktop
+- Working contact form (Formspree) with inline success/error states
+- Scroll-to-top button
+- Sections: About, Experience, Projects, Skills, Contact
 
+
+Deployed on [Vercel](https://vercel.com).
 ## Contact
 
 - Email: vincentmariscotescleofe@gmail.com

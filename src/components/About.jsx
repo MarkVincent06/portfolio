@@ -48,6 +48,32 @@ export default function About() {
               ))}
             </div>
           </div>
+
+          <div className="pt-6 mt-6 border-t border-border">
+            <p className="font-mono text-xs uppercase tracking-widest text-muted mb-3">
+              Education
+            </p>
+
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+              <div>
+                <p className="font-body text-sm text-ink font-medium">
+                  BS in Information Technology
+                </p>
+                <p className="font-body text-sm text-muted">
+                  Camarines Sur Polytechnic Colleges &mdash; Nabua, Camarines
+                  Sur
+                </p>
+              </div>
+              <p className="font-mono text-xs text-muted whitespace-nowrap">
+                Jan 2021 &ndash; Jul 2026
+              </p>
+            </div>
+
+            <p className="font-body text-sm leading-relaxed text-muted mt-2">
+              Placed 3rd in Computer Programming at TECXplosion: Exploring the
+              Digital Universe (4th CCS Cyberfest), Jan 2024.
+            </p>
+          </div>
         </div>
       </Container>
     </section>

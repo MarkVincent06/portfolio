@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { LuMenu, LuX } from "react-icons/lu";
+import Button from "./ui/Button";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
@@ -17,12 +18,13 @@ export default function Header() {
       <div className="flex items-center justify-between px-6 md:px-12 py-5">
         {/* Logo/Brand */}
         <a href="#top" className="flex items-center gap-2">
-          <span className="font-display font-semi hover:text-accent transition-colors">
-            MVC<span className="text-accent hover:accent-accent-dark">.</span>
+          <span className="font-display font-semibold hover:text-accent transition-colors">
+            MVC<span className="text-accent">.</span>
           </span>
         </a>
+
         {/* Desktop nav */}
-        <nav className="hidden md:flex gap-8">
+        <nav className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
@@ -32,7 +34,15 @@ export default function Header() {
               {link.label}
             </a>
           ))}
+
+          <Button
+            onClick={() => window.open("/resume.pdf", "_blank")}
+            size="sm"
+          >
+            Resume
+          </Button>
         </nav>
+
         {/* Mobile toggle */}
         <button
           onClick={() => setOpen(!open)}
@@ -57,6 +67,17 @@ export default function Header() {
               {link.label}
             </a>
           ))}
+
+          <Button
+            onClick={() => {
+              window.open("/resume.pdf", "_blank");
+              setOpen(false);
+            }}
+            size="sm"
+            className="mt-3 w-full"
+          >
+            Resume
+          </Button>
         </nav>
       )}
     </header>

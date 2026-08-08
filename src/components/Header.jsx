@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { LuCode, LuMenu, LuX } from "react-icons/lu";
+import { LuMenu, LuX } from "react-icons/lu";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
@@ -17,8 +17,9 @@ export default function Header() {
       <div className="flex items-center justify-between px-6 md:px-12 py-5">
         {/* Logo/Brand */}
         <a href="#top" className="flex items-center gap-2">
-          <LuCode className="text-accent text-lg" />
-          <span className="font-display font-semibold text-ink">MVC</span>
+          <span className="font-display font-semi hover:text-accent transition-colors">
+            MVC<span className="text-accent hover:accent-accent-dark">.</span>
+          </span>
         </a>
         {/* Desktop nav */}
         <nav className="hidden md:flex gap-8">

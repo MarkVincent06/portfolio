@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SocialSidebar from "./components/SocialSidebar";
 import EmailSidebar from "./components/EmailSidebar";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Footer />
       <SocialSidebar />
       <EmailSidebar />
+      <ScrollToTop />
     </>
   );
 }

@@ -1,7 +1,7 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import SectionHeading from "./ui/SectionHeading";
 import Container from "./ui/Container";
-import Button from "./ui/Button";
+// import Button from "./ui/Button";
 import { projects } from "../data/portfolio";
 
 export default function Projects() {

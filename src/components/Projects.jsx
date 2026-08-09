@@ -48,15 +48,17 @@ export default function Projects() {
                     </h3>
 
                     <span className="flex items-center gap-3">
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label={`${project.name} GitHub repository`}
-                        className="text-ink hover:text-accent transition-colors"
-                      >
-                        <FaGithub size={18} className="hover:text-accent" />
-                      </a>
+                      {project.githubUrl && (
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label={`${project.name} GitHub repository`}
+                          className="text-ink hover:text-accent transition-colors"
+                        >
+                          <FaGithub size={18} className="hover:text-accent" />
+                        </a>
+                      )}
 
                       {project.liveUrl && (
                         <a

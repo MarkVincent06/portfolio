@@ -34,7 +34,7 @@ export const projects = [
       "A full-stack CRM system with real-time notifications and role-based access control, adopted by 20+ employees to streamline customer management and sales operations.",
     image: intellicrmImg,
     tech: ["React", "Node.js", "Express", "MongoDB", "REST API", "JWT"],
-    githubUrl: "https://github.com/MarkVincent06/CRM_System",
+    githubUrl: null,
     liveUrl: "https://intellicrm-system.vercel.app",
   },
   {
